@@ -5,7 +5,7 @@ btn.addEventListener('click', showGitHubrepository)
 
 function showGitHubrepository() {
   let search = document.getElementById('research').value
-  let page = 50;
+  let page = 100;
   let url = 'https://api.github.com/search/repositories?q=' + search + '&per_page=' + page
 
   fetch(url)
@@ -21,10 +21,10 @@ function showGitHubrepository() {
         const showInHTML = data.items.map((item) => {
           return `
           <div class='item-box'>
-           <p><span class='text-stron'>${item.full_name}</span>  <span class='text-grey'> ${item.visibility} archive</span> </p>
+           <p><span class='text-stron'>${item.full_name}</span>  <span class='text-grey text-visab'> ${item.visibility} archive</span> </p>
           <p> ${item.description}</p>
          <p><span>Link:</span> <a href='${item.html_url}' target='_blank'>${item.clone_url}</a></p>
-         <p class='text-grey'><span>Updated on</span> ${item.created_at}</p>
+         <div class='text-grey'><span class='text-start'>⭐ ${item.watchers_count}</span></div>
           </div>
           `
         }).join('')

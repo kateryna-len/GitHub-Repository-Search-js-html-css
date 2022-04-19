@@ -1,5 +1,20 @@
 body {
   font-family: 'Open Sans', sans-serif;
+
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+input {
+  border: none;
+  width: 30%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
 }
 
 #tap {
@@ -9,8 +24,10 @@ body {
 }
 
 .item-box {
-  border-top: 1px solid black;
-
+ 
+  background-color: rgba(240, 241, 246, 0.338);
+  border-radius: 15px;
+  width: 50%;
   margin: 5px 0;
   padding: 10px;
 }
@@ -22,8 +39,25 @@ body {
 .text-grey {
   color: gray;
   text-transform: initial;
-}
 
+  font-family: 'Poppins', sans-serif;
+}
+.text-visab{
+  font-size: 13px;
+}
+.data-item{
+  
+  margin-left: 20px;
+}
+.text-start{
+  color: rgb(165, 104, 37);
+  font-weight: 600;
+}
+.content-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 canvas {
   display: none;
 }
