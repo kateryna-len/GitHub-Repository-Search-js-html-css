@@ -1,0 +1,33 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#tap {
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item-box {
+  border-top: 1px solid black;
+
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.text-stron {
+  font-weight: 700;
+}
+
+.text-grey {
+  color: gray;
+  text-transform: initial;
+}
+
+canvas {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
